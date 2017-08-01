@@ -15,7 +15,7 @@
   <div class="friends" ng-controller="FriendCtrl">
     <form class="form-inline searchForm" role="form">
       <div class="form-group">
-        <input class="form-control" placeholder="Search Anything About Your Friends">
+        <input class="form-control" placeholder="Search Anything About Your Friends"  ng-model="searchTerm">
 
         <select class="input-medium">
           <option>Name</option>
@@ -33,7 +33,7 @@
     </form>
 
     <ul>
-      <li class='friend' ng-repeat="f in friends">
+      <li class='friend' ng-repeat="f in friends | filter: searchTerm">
         <img class="profile-pic" ng-src={{f.pic_square}}>
         <h3>{{f.name}}</h3>
         <div class="location">

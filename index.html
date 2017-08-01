@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body ng-app="myApp">
   <h1>The <strong>facebook</strong> Friend Machine</h1>
 
-  <div class="friends">
+  <div class="friends" ng-controller="FriendCtrl">
     <form class="form-inline searchForm" role="form">
       <div class="form-group">
         <input class="form-control" placeholder="Search Anything About Your Friends">
@@ -52,5 +52,8 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- your scripts here -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+  <script src="./app/app.js"></script>
+  <script src="./controllers/FriendCtrl.js"></script>
 </body>
 </html>

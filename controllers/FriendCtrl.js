@@ -32,6 +32,7 @@ angular.module('myApp').controller('FriendCtrl', ($scope)=>{
         { name: 'Travis Epperson', pic_square: 'http://free-profile-pics.com/images/bbm_avatar_107.png', location: { city: 'Phoenix', state: 'Arizona', country: 'United States', zip: '' }, status: null, friend_count: null },
         { name: 'Matt LeGare', pic_square: 'http://free-profile-pics.com/images/bbm_avatar_117.png', location: null, status: null, friend_count: 350 },
         { name: 'Karla Jensen Pratt', pic_square: 'http://free-profile-pics.com/images/free-blackberry-bbm-profile-picture_175.png', location: null, status: null, friend_count: 855 }
-    ] 
+    ];
+
 
 })

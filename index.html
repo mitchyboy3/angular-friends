@@ -15,7 +15,8 @@
   <div class="friends" ng-controller="FriendCtrl">
     <form class="form-inline searchForm" role="form">
       <div class="form-group">
-        <input class="form-control" placeholder="Search Anything About Your Friends"  ng-model="searchTerm">
+        <input class="form-control" placeholder="Search Name" ng-model="searchTerm.name">
+        <input class="form-control" placeholder="Search State" ng-model="searchTerm.location.state">
 
         <select class="input-medium">
           <option>Name</option>

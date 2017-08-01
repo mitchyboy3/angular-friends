@@ -33,17 +33,17 @@
     </form>
 
     <ul>
-      <li class='friend'>
-        <img class="profile-pic" src='http://placebear.com/50/50.jpg'>
-        <h3>Cali Fornia</h3>
+      <li class='friend' ng-repeat="f in friends">
+        <img class="profile-pic" ng-src={{f.pic_square}}>
+        <h3>{{f.name}}</h3>
         <div class="location">
-          Location: New Port Beach, California, United States
+          Location: {{f.location.city}}, {{f.location.state}}, {{f.location.country}}
         </div>
         <div class="status">
-          Status: I hate the snow. I wish I was on the beach right now!!!
+          Status: {{f.status}}
         </div>
         <div class="num-friends">
-          Friends: 1,367
+          Friends: {{f.friend_count}}
         </div>
       </li>
     </ul>
